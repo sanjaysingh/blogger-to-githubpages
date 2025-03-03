@@ -25,14 +25,12 @@ RUN gem install jekyll bundler
 # Set up working directory
 WORKDIR /app
 
-# Copy all necessary files
+# Copy migration scripts and blog XML
 COPY sample-blog.xml /app/
-COPY *.py /app/
-COPY *.sh /app/
-COPY main.css /app/
+COPY ./ /app/migration/
 
 # Set permissions
-RUN chmod +x /app/*.sh
+RUN chmod +x /app/migration/*.sh
 
 # Set entrypoint
-ENTRYPOINT ["/app/entrypoint.sh"] 
+ENTRYPOINT ["/app/migration/entrypoint.sh"] 

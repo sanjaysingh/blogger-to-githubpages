@@ -1,0 +1,38 @@
+# Jekyll build output
+migrated-blog-server/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby dependencies
+.bundle/
+vendor/
+.ruby-version
+.ruby-gemset
+
+# Node dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log 
